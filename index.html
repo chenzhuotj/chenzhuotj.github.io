@@ -17,13 +17,64 @@
 
         <style>
             .title {
-                color: black;
+                color: white;
                 text-align: center;
+
+                position: absolute; /* 定义元素的定位类型 */
+                left: 50%; /* 水平居中 */
+                transform: translateX(-50%); /* 微调左右位置 */
+            }
+
+            #title_01 {
+                top: 5%;
+            }
+
+            #title_02 {
+                top: 13%;
             }
 
             .exam {
-                color:#0000FF;
+                display: inline-block;
+                width: 45%;
+                padding: 0 3%;
+                border-width: 2px;
+                border-style: dashed;
+                border-color: skyblue;
+                background-color: black;
+                color: white;
                 text-align: center;
+                text-decoration: none;
+                border-radius: 100px;
+                transition: all 0.3s ease; /*添加动画效果*/
+
+                position: absolute; /* 定义元素的定位类型 */
+                left: 50%; /* 水平居中 */
+                transform: translateX(-50%); /* 微调左右位置 */
+            }
+        
+            .exam:hover {
+                border-width: 4px;
+                border-style: solid;
+                border-color: red;
+                background-color: #FFCC00;
+                color: black;
+                cursor: pointer;   
+            }
+
+            #exam_01 {
+                top: 25%;
+            }
+
+            #exam_02 {
+                top: 36%;
+            }
+
+            #exam_03 {
+                top: 47%;
+            }
+
+            #exam_04 {
+                top: 58%;
             }
 
             .prompt {
@@ -36,19 +87,19 @@
             }
 
             #prompt_01 {
-                bottom: 45%; /* 让元素与底部对齐 */
+                bottom: 21%;
             }
 
             #prompt_02 {
-                bottom: 40%; /* 让元素与底部对齐 */
+                bottom: 16%;
             }
 
             #prompt_03 {
-                bottom: 35%; /* 让元素与底部对齐 */
+                bottom: 12%;
             }
 
             #prompt_04 {
-                bottom: 30%; /* 让元素与底部对齐 */
+                bottom: 8%;
             }
 
             img {
@@ -58,28 +109,52 @@
                 background-color: black;
 
                 position: absolute; /* 定义元素的定位类型 */
-                bottom: 0; /* 让元素与底部对齐 */
                 left: 50%; /* 水平居中 */
                 transform: translateX(-50%); /* 微调左右位置 */
+            }
+
+            #img_01 {
+                top: 0; /* 让元素与顶部对齐 */
+            }
+
+            #img_02 {
+                bottom: 0; /* 让元素与底部对齐 */
             }
         </style>
     </head>
 
-    <body>
+    <body bgcolor="black">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1 class="title">ROIC赛题测试系统</h1>
-        <h1 class="title">—— 考生端 ——</h1>
-        <a href="https://roic.giimoe.com/oj" target="_blank">
-            <h2 class="exam">暂无排考信息</h2>
+
+        <a href="https://mailchi.mp/giimoe/new-video" target="_blank">
+            <img id="img_01" src="./image/BAR.gif" alt="Giimoe Gaming Robot">
         </a>
-        <h3 class="prompt" id="prompt_01">「测试流程」</h3>
+
+        <h1 class="title" id="title_01">ROIC 赛题测试系统</h1>
+        <h1 class="title" id="title_02">—— 考生端 ——</h1>
+
+        <a class="exam" id="exam_01" href="https://roic.giimoe.com/oj" target="_blank">
+            <h2>1# 考场：暂无排考信息</h2>
+        </a>
+        <a class="exam" id="exam_02" href="https://roic.giimoe.com/oj" target="_blank">
+            <h2>2# 考场：暂无排考信息</h2>
+        </a>
+        <a class="exam" id="exam_03" href="https://roic.giimoe.com/oj" target="_blank">
+            <h2>3# 考场：暂无排考信息</h2>
+        </a>
+        <a class="exam" id="exam_04" href="https://roic.giimoe.com/oj" target="_blank">
+            <h2>4# 考场：暂无排考信息</h2>
+        </a>
+
+        <h3 class="prompt" id="prompt_01">「 测试流程 」</h3>
         <h3 class="prompt" id="prompt_02">1. 点击上方链接，进入相应考场；</h3>
         <h3 class="prompt" id="prompt_03">2. 填写开考口令，下载电子试题；</h3>
         <h3 class="prompt" id="prompt_04">3. 按时完成作答，提交至监考员。</h3>
+
         <a href="https://roic.giimoe.com/oj" target="_blank">
-            <img src="./image/LOGO.jpg" alt="ROIC STEM Education">
+            <img id="img_02" src="./image/LOGO.jpg" alt="ROIC STEM Education">
         </a>
     </body>
 </html>
