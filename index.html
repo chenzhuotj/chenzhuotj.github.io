@@ -120,6 +120,35 @@
             #img_02 {
                 bottom: 0; /* 让元素与底部对齐 */
             }
+
+            .broadcast {
+                position: absolute;
+                top: 50%;
+                left: 50%; 
+                transform: translate(-50%, -50%);
+                width: 80%;
+                height: 50%;
+                z-index: 9999;
+                background-color: rgba(255,204,0,0.9);
+                padding: 0 3%;
+                border-radius: 50px;
+
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+
+                color: red;
+                font-size: 100px;
+                font-weight: bold;
+                font-family: "仿宋", "宋体";
+                text-align: center;
+                line-height: 200%;
+                letter-spacing: 10px;
+            }
+
+            .broadcast:hover {
+                cursor: url('./image/ROIC.ico'), auto;
+            }
         </style>
     </head>
 
@@ -156,5 +185,9 @@
         <a href="https://a6junc7glu.feishu.cn/docx/W6IUd9UFPoaCX7xl4Fgcymc1nse" target="_blank">
             <img id="img_02" src="./image/LOGO.jpg" alt="ROIC STEM Education">
         </a>
+
+        <div class="broadcast" onclick="window.open('https://roic.giimoe.com/oj','_blank')">
+            ROIC 全体教师<br>祝学生及家长 2024新年快乐！
+        </div>
     </body>
 </html>
